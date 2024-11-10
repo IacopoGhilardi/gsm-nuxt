@@ -2,5 +2,10 @@
   "servizi": {
     "title": "Cosa offriamo",
     "subtitle": "Esperienza personalizzata di abbigliamento da lavoro: offriamo un servizio unico in cui ti portiamo direttamente i campioni da provare, disponibili subito o ordinabili rapidamente. Scopri la differenza tra un semplice negozio online e un'esperienza su misura pensata appositamente per te."
+  },
+  "hero": {
+    "title": "Una soluzione professionale per le tue esigenze",
+    "catalogButton": "Sfoglia i nostri cataloghi",
+    "aboutButton": "Scopri chi siamo"
   }
 }

@@ -1,0 +1,12 @@
+{
+    "phone": {
+        "icon": "fas fa-phone",
+        "title": "Telefono",
+        "value": "+39 347 356 8443"
+    },
+    "email": {
+        "icon": "fas fa-envelope",
+        "title": "Email",
+        "value": "gsmabbigliamentodalavoro@gmail.com"
+    }
+}
