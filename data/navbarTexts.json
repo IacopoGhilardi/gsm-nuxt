@@ -1,0 +1,19 @@
+{
+    "navigation": [
+        {
+            "label": "Home",
+            "route": "/",
+            "icon": "fa-solid fa-house"
+        },
+        {
+            "label": "Cataloghi",
+            "route": "/cataloghi",
+            "icon": "fa-solid fa-book"
+        },
+        {
+            "label": "Contatti",
+            "route": "/contatti",
+            "icon": "fa-solid fa-envelope"
+        }
+    ]
+} 

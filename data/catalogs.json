@@ -1,0 +1,26 @@
+[
+  {
+    "name": "isacco",
+    "baseUrl": "https://gsm-abbigliamento.s3.amazonaws.com/",
+    "image": "logo-isacco.png",
+    "catalogs": [
+      {
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/chef_line.jpeg",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/CHEF_LINE_2024.pdf",
+        "id": "chef-line"
+      }
+    ]
+  },
+  {
+    "name": "endi",
+    "baseUrl": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/",
+    "image": "logo-endi.gif",
+    "catalogs": [
+      {
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Estetica-200x300.jpg",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/cat+estetica+2008+web.pdf",
+        "id": "estetica"
+      }
+    ]
+  }
+] 
