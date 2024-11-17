@@ -17,7 +17,8 @@
     "@nuxtjs/color-mode": "latest",
     "@nuxtjs/tailwindcss": "latest",
     "daisyui": "latest",
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "pdfjs-dist": "^4.8.69"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.2",

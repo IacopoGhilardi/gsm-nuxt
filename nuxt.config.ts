@@ -2,7 +2,8 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   compatibilityDate: '2024-10-29',
   plugins: [
-    '~/plugins/fontawesome.ts'
+    '~/plugins/fontawesome.ts',
+    '~/plugins/pdfRenderer.ts'
   ],
   css: [
     '@fortawesome/fontawesome-free/css/all.css'

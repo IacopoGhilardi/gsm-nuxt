@@ -17,8 +17,8 @@
   </div>
 </template>
 <script setup>
-import MainTitle from './MainTitle.vue';
-import ServiceItem from './ServiceItem.vue';
+import MainTitle from '~/components/atoms/MainTitle.vue';
+import ServiceItem from '~/components/atoms/ServiceItem.vue';
 import homeTexts from '@/data/homeTexts.json';
 import embroidery from '~/assets/images/home/services/cross-stitch.png'
 import apron from '~/assets/images/home/services/apron (1).png'

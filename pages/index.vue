@@ -7,9 +7,9 @@
   </MainLayout>
 </template>
 <script setup>
-import HeroSection from '~/components/atoms/heroSection'
-import PartnersSection from '~/components/atoms/partnersSection'
-import AboutSection from '~/components/atoms/AboutSection.vue';
-import ServicesSection from "~/components/atoms/ServicesSection.vue";
+import HeroSection from '~/components/molecules/HeroSection.vue'
+import PartnersSection from '~/components/molecules/PartnersSection.vue'
+import AboutSection from '~/components/molecules/AboutSection.vue';
+import ServicesSection from "~/components/molecules/ServicesSection.vue";
 import MainLayout from '~/components/layout/MainLayout.vue'
 </script>

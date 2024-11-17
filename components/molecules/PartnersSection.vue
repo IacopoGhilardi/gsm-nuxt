@@ -30,7 +30,6 @@
     { path: logoMakito, title: 'Makito' },
   ]
   
-  // Duplica l'array di partner più volte per simulare uno scroll infinito
   const displayedPartners = [...partners, ...partners]
   const scrollOffset = ref(0)
   const scrollSpeed = 1
