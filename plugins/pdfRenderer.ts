@@ -17,7 +17,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   
       try {
         console.log('Loading PDF:', pdfUrl);
-        const loadingTask = pdfjsLib.getDocument('https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/cat+estetica+2008+web.pdf');
+        const loadingTask = pdfjsLib.getDocument(pdfUrl);
         loadingTask.onProgress = (progressData: any) => {
           console.log('Loading progress:', progressData);
         };

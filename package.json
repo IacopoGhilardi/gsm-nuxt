@@ -16,6 +16,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@nuxtjs/color-mode": "latest",
     "@nuxtjs/tailwindcss": "latest",
+    "@vueuse/head": "^2.0.0",
     "daisyui": "latest",
     "nuxt": "latest",
     "pdfjs-dist": "^4.8.69"
