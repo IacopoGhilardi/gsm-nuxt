@@ -16,8 +16,3 @@
 import EndiHome from '~/assets/images/home/sfondo-removebg-preview.png'
 const mainText = "Con oltre vent'anni di esperienza nel settore dell'abbigliamento da lavoro, offriamo soluzioni personalizzate e di alta qualità, garantendo un servizio professionale e affidabile."
 </script>
-<style scoped>
-  .preview-banner {
-    background-image: url('@/assets/images/sfondo-removebg-preview.png');
-  }
-</style>

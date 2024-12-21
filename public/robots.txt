@@ -1,1 +1,4 @@
 
+User-agent: *
+Allow: /
+Sitemap: https://www.gsm-adl.it/sitemap.xml

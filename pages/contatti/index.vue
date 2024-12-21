@@ -14,14 +14,14 @@
                                 <i :class="ContactsTexts.phone.icon" class="text-white text-5xl"></i>
                             </div>
                             <p class="font-bold text-2xl mt-2 mb-6">{{ ContactsTexts.phone.title }}</p>
-                            <p class="text-lg">{{ ContactsTexts.phone.value }}</p>
+                            <a :href="`https://wa.me/${ContactsTexts.phone.value}`" class="text-lg hover:underline flex items-center">{{ ContactsTexts.phone.value }}</a>
                         </div>
                         <div class="contact-item flex flex-col items-center p-6 rounded-lg shadow-md bg-primary text-white">
                             <div class="bg-white bg-opacity-20 rounded-full w-24 h-24 flex items-center justify-center">
                                 <i :class="ContactsTexts.email.icon" class="text-white text-5xl"></i>
                             </div>
                             <p class="font-semibold mt-2 mb-6 text-2xl">{{ ContactsTexts.email.title }}</p>
-                            <p class="text-lg">{{ ContactsTexts.email.value }}</p>
+                            <a :href="`mailto:${ContactsTexts.email.value}`" class="text-lg hover:underline">{{ ContactsTexts.email.value }}</a>
                         </div>
                     </div>
                 </div>
@@ -34,14 +34,14 @@
                     <i :class="ContactsTexts.phone.icon" class="text-white text-5xl"></i>
                 </div>
                 <p class="font-bold text-2xl mt-2 mb-6">{{ ContactsTexts.phone.title }}</p>
-                <p class="text-lg">{{ ContactsTexts.phone.value }}</p>
+                <a :href="`https://wa.me/${ContactsTexts.phone.value}`" class="text-lg hover:underline">{{ ContactsTexts.phone.value }}</a>
             </div>
             <div class="contact-item flex flex-col items-center p-6 rounded-lg shadow-md bg-primary text-white">
                 <div class="bg-white bg-opacity-20 rounded-full w-24 h-24 flex items-center justify-center">
                     <i :class="ContactsTexts.email.icon" class="text-white text-5xl"></i>
                 </div>
                 <p class="font-semibold mt-2 mb-6 text-2xl">{{ ContactsTexts.email.title }}</p>
-                <p class="text-lg">{{ ContactsTexts.email.value }}</p>
+                <a :href="`mailto:${ContactsTexts.email.value}`" class="text-lg hover:underline">{{ ContactsTexts.email.value }}</a>
             </div>
         </div>
     </div>

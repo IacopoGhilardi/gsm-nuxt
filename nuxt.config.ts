@@ -1,5 +1,8 @@
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap'
+  ],
   compatibilityDate: '2024-10-29',
   plugins: [
     '~/plugins/fontawesome.ts',
@@ -12,6 +15,15 @@ export default defineNuxtConfig({
     '@layouts': '/components/layout',
     '@components': '/components'
   },
+  site: {
+    url: 'https://www.gsm-adl.it',
+    name: 'GSM Adl',
+    description: 'Sito specializzato in abbigliamento da lavoro a Pisa.',
+    defaultLocale: 'it'
+  },
+  sitemap: {
+    _route: '/'
+  },
   components: true,
   app: {
     head: {
@@ -22,7 +34,8 @@ export default defineNuxtConfig({
         { hid: 'description', name: 'description', content: 'Sito specializzato in abbigliamento da lavoro a Pisa.' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
   }

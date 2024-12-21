@@ -1,10 +1,12 @@
 <template>
   <mainLayout>
-    <div class="max-w-screen-xl mx-auto px-4">
-      <MainTitle
-          :text="texts.mainTitle" 
-          :subtitle="texts.subtitle"
-        />
+    <div class="max-w-screen-xl mx-auto px-4 text-center">
+      <div class="text-primary pb-8">
+        <MainTitle
+            :text="texts.mainTitle" 
+            :subtitle="texts.subtitle"
+          />
+      </div>
      
       <div v-for="(partner, index) in catalogList" :key="index" class="card-container py-4">
         <details class="collapse collapse-arrow bg-base-200">
