@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-10-29',
   plugins: [
     '~/plugins/fontawesome.ts',
-    '~/plugins/pdfRenderer.ts'
+    '~/plugins/pdfRenderer.ts',
+    '~/plugins/gsap.ts'
   ],
   css: [
     '@fortawesome/fontawesome-free/css/all.css'

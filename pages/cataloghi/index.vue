@@ -38,6 +38,9 @@ import EndiLogo from '~/assets/images/partners/logo-endi.gif';
 import MakitoLogo from '~/assets/images/partners/makito-logo.png';
 import JrcLogo from '~/assets/images/partners/logo-jrc.jpg';
 
+const { $gsap } = useNuxtApp();
+const contentRefs = ref<HTMLElement[]>([]);
+
 const images = {
   'logo-isacco.png': IsaccoLogo,
   'logo-endi.gif': EndiLogo,

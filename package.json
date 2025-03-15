@@ -19,6 +19,7 @@
     "@nuxtjs/tailwindcss": "latest",
     "@vueuse/head": "^2.0.0",
     "daisyui": "latest",
+    "gsap": "^3.12.7",
     "nuxt": "latest",
     "pdfjs-dist": "^4.8.69"
   },

@@ -5,29 +5,34 @@
     "image": "logo-isacco.png",
     "catalogs": [
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/chef_line.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/CHEF_LINE_2024.pdf",
-        "id": "isacco-chef-line-2024"
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/chef_line.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/2025.pdf",
+        "id": "isacco-chef-line-2025"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/hair_stylist.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/HAIR_STYLIST_2024.pdf",
-        "id": "isacco-hair-stylist-2024"
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/hair_stylist.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/HAIR_STYLIST_2025.pdf",
+        "id": "isacco-hair-stylist-2025"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/horeca.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/HORECA_2024.pdf",
-        "id": "isacco-horeca-2024"
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/horeca.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/HORECA_2025.pdf",
+        "id": "isacco-horeca-2025"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/antinfortunistica.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/MEDICALE_2024.pdf",
-        "id": "isacco-medicale-2024"
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/medicale.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/MEDICALE_2025.pdf",
+        "id": "isacco-medicale-2025"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/onesize.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/ONE_SIZE_2024.pdf",
-        "id": "isacco-one-size-2024"
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/onesize.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/ONE_SIZE_2025.pdf",
+        "id": "isacco-one-size-2025"
+      },
+      {
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/calzature.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/CALZATURE_2025.pdf",
+        "id": "isacco-calzature-2025"
       }
     ]
   },
@@ -120,6 +125,16 @@
         "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Mix-200x300.jpg",
         "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/untitled.pdf",
         "id": "endi-mix"
+      },
+      {
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Horeca_2.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/CatalogoENDI-HORECA-2024.pdf",
+        "id": "endi-horeca-2"
+      },
+      {
+        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Beauty_2.png",
+        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/CatalogoENDI-Beauty-2024_low2.pdf",
+        "id": "endi-beauty-2"
       }
     ]
   },
@@ -130,7 +145,7 @@
     "catalogs": [
       {
         "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/mackito/copertine/mackito_2024.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/mackito/General+Catalogue+2024+Italia+Neutral.pdf",
+        "catalog": "http://generalcatalogue2025.eu/6aca473ef2107957d9e6fa9a60923698/",
         "id": "makito-general-catalogue-2024"
       }
     ]
