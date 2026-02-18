@@ -5,24 +5,24 @@
     "image": "logo-isacco.png",
     "catalogs": [
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/chef_line.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/2025.pdf",
-        "id": "isacco-chef-line-2025"
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/chef_line.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/CHEFLINE_2026.pdf",
+        "id": "isacco-chef-line-2026"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/hair_stylist.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/HAIR_STYLIST_2025.pdf",
-        "id": "isacco-hair-stylist-2025"
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/hair_stylist.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/HAIRSTYLIST_2026.pdf",
+        "id": "isacco-hair-stylist-2026"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/horeca.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/HORECA_2025.pdf",
-        "id": "isacco-horeca-2025"
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/Horeca.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/HORECA_2026.pdf",
+        "id": "isacco-horeca-2026"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/medicale.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/MEDICALE_2025.pdf",
-        "id": "isacco-medicale-2025"
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/Medicale.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/MEDICALE_2026.pdf",
+        "id": "isacco-medicale-2026"
       },
       {
         "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/onesize.png",
@@ -144,8 +144,8 @@
     "image": "makito-logo.png",
     "catalogs": [
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/mackito/copertine/mackito_2024.jpeg",
-        "catalog": "http://generalcatalogue2025.eu/6aca473ef2107957d9e6fa9a60923698/",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/mackito/copertine/mackito_2024.jpeg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/mackito/copertine/mackito_2024.jpeg",
         "id": "makito-general-catalogue-2024"
       }
     ]
@@ -156,9 +156,9 @@
     "image": "logo-jrc.jpg",
     "catalogs": [
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/jrc/copertine/jrc.jpeg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/jrc/Catalogo-2024_it.pdf",
-        "id": "jrc-catalogo-2024"
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/jrc/copertine/jrc_2025.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/jrc/catalogo_jrc.pdf",
+        "id": "jrc-catalogo-2025"
       }
     ]
   }
