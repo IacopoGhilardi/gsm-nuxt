@@ -23,16 +23,6 @@
         "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/Medicale.png",
         "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/MEDICALE_2026.pdf",
         "id": "isacco-medicale-2026"
-      },
-      {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/onesize.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/ONE_SIZE_2025.pdf",
-        "id": "isacco-one-size-2025"
-      },
-      {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/copertine/calzature.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/isacco/CALZATURE_2025.pdf",
-        "id": "isacco-calzature-2025"
       }
     ]
   },
