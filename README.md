@@ -93,8 +93,22 @@ raggiungibile dal pulsante "PDF" dentro lo sfogliatore.
    ```
 
    Lo script scarica il PDF, produce le pagine in due larghezze e scrive il
-   numero di pagine dentro `catalogs.json`. È ripartibile: se lo interrompi,
-   al rilancio salta quelle già fatte.
+   numero di pagine dentro `catalogs.json`, salvandolo dopo ogni catalogo.
+   È ripartibile: se lo interrompi, al rilancio salta quelle già fatte.
+
+   Usa tutti i core disponibili. Con `--jobs N` ne limiti il numero, utile
+   se devi continuare a lavorare sulla macchina mentre gira:
+
+   ```sh
+   node scripts/render-catalogs.mjs --only isacco --jobs 4
+   ```
+
+   Ogni pagina viene rasterizzata una volta sola alla larghezza maggiore e la
+   variante mobile si ricava riducendo quella: la rasterizzazione è il costo
+   dominante, farla due volte raddoppiava i tempi senza guadagno di qualità.
+   Misurato su un catalogo Endi da 44 pagine: da 25,6s a 3,9s, stesso peso in
+   uscita. I cataloghi Isacco hanno pagine molto più pesanti, quindi non
+   estrapolare da questo numero: renderizzane uno e misura.
 
 3. Carica le pagine sul bucket R2:
 
