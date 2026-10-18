@@ -2,15 +2,8 @@
 #
 # Carica le pagine WebP prodotte da render-catalogs.mjs sul bucket R2.
 #
-# Configurazione una tantum (le credenziali restano sulla tua macchina,
-# non in questo repo):
-#
-#   rclone config create r2-gsm s3 \
-#     provider=Cloudflare \
-#     access_key_id=... \
-#     secret_access_key=... \
-#     endpoint=https://<ACCOUNT_ID>.r2.cloudflarestorage.com \
-#     acl=private
+# Usa il remote rclone gia' configurato ("gsm-website", che punta a R2).
+# Per usarne un altro:  R2_REMOTE=nome R2_BUCKET=nome ./scripts/upload-catalogs.sh ...
 #
 # Uso:
 #   ./scripts/upload-catalogs.sh /percorso/cartella-di-lavoro
@@ -18,8 +11,8 @@
 #
 set -euo pipefail
 
-REMOTE="${R2_REMOTE:-r2-gsm}"
-BUCKET="${R2_BUCKET:-gsm-abbigliamento}"
+REMOTE="${R2_REMOTE:-gsm-website}"
+BUCKET="${R2_BUCKET:-gsm-website}"
 
 WORK_DIR="${1:-}"
 shift || true
@@ -50,6 +43,7 @@ rclone copy "$WORK_DIR/sfoglia" "${REMOTE}:${BUCKET}/sfoglia" \
   --transfers 16 \
   --checkers 32 \
   --immutable \
+  --s3-no-check-bucket \
   --header-upload "Cache-Control: public, max-age=31536000, immutable" \
   --header-upload "Content-Type: image/webp" \
   --progress \
