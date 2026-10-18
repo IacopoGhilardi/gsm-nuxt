@@ -50,11 +50,7 @@
           :id="`catalogs-${partner.name}`"
           class="border-t border-ink/10 px-5 py-9 lg:px-8 lg:py-10"
         >
-          <CatalogSection
-            :partner="partner.name"
-            :catalogs="partner.catalogs"
-            :open-label="texts.openLabel"
-          />
+          <CatalogSection :partner="partner.name" :catalogs="partner.catalogs" />
         </div>
       </section>
 
@@ -66,9 +62,6 @@
           <h2 class="text-2xl font-semibold uppercase tracking-tight text-navy">
             {{ texts.helpTitle }}
           </h2>
-          <p class="mt-2 max-w-xl text-sm leading-relaxed text-ink/65 sm:text-base">
-            {{ texts.helpText }}
-          </p>
         </div>
         <NuxtLink
           to="/contatti"

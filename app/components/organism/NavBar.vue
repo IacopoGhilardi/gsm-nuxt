@@ -22,10 +22,12 @@
         </nav>
 
         <a
-          :href="`tel:${contacts.phone.value}`"
+          :href="whatsappUrl"
+          target="_blank"
+          rel="noopener"
           class="ml-auto hidden items-center gap-2 bg-coral px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-coral-dark lg:ml-6 lg:flex"
         >
-          <i class="fa-solid fa-phone text-xs" aria-hidden="true"></i>
+          <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
           <span>{{ formattedPhone }}</span>
         </a>
 
@@ -89,17 +91,13 @@
 
         <div class="mt-auto space-y-3 border-t border-ink/10 p-5">
           <a
-            :href="`tel:${contacts.phone.value}`"
+            :href="whatsappUrl"
+            target="_blank"
+            rel="noopener"
             class="flex w-full items-center justify-center gap-2 bg-coral px-4 py-3 text-sm font-semibold text-white"
           >
-            <i class="fa-solid fa-phone text-xs" aria-hidden="true"></i>
-            {{ formattedPhone }}
-          </a>
-          <a
-            :href="`mailto:${contacts.email.value}`"
-            class="block text-center text-sm text-ink/60 underline-offset-4 hover:underline"
-          >
-            {{ contacts.email.value }}
+            <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
+            Scrivici su WhatsApp
           </a>
         </div>
       </aside>
@@ -114,6 +112,8 @@ import contacts from '~/data/contactsTexts.json'
 
 const open = ref(false)
 const route = useRoute()
+
+const whatsappUrl = `https://wa.me/${contacts.phone.value.replace('+', '')}`
 
 const formattedPhone = computed(() =>
   contacts.phone.value.replace(/^(\+39)(\d{3})(\d{3})(\d{4})$/, '$1 $2 $3 $4')

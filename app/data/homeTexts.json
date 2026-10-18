@@ -6,9 +6,14 @@
     "catalogButton": "Sfoglia i cataloghi",
     "aboutButton": "Chi siamo",
     "facts": [
-      { "value": "20+", "label": "Anni di esperienza" },
-      { "value": "4", "label": "Brand rappresentati" },
-      { "value": "A domicilio", "label": "Campioni da provare" }
+      {
+        "value": "20+",
+        "label": "Anni di esperienza"
+      },
+      {
+        "value": "A domicilio",
+        "label": "Campioni da provare"
+      }
     ]
   },
   "partners": {
@@ -27,12 +32,12 @@
       "Con oltre vent'anni di esperienza nel settore dell'abbigliamento da lavoro, offriamo soluzioni personalizzate e di alta qualità, garantendo un servizio professionale e affidabile.",
       "Lavoriamo con ristoranti, hotel, officine, studi medici, parrucchieri e aziende di ogni dimensione su Pisa e provincia. Ti seguiamo dalla scelta del capo alla personalizzazione con stampa o ricamo."
     ],
-    "ctaLabel": "Parliamone"
+    "ctaLabel": "Contattaci"
   },
   "cta": {
-    "title": "Serve una divisa per la tua squadra?",
-    "subtitle": "Raccontaci di cosa hai bisogno: ti richiamiamo e fissiamo un appuntamento con i campioni.",
-    "primary": "Chiamaci ora",
-    "secondary": "Scrivi su WhatsApp"
+    "title": "Serve una divisa per il tuo negozio?",
+    "subtitle": "Raccontaci di cosa hai bisogno: ti rispondiamo e fissiamo un appuntamento con i campioni.",
+    "primary": "Scrivici su WhatsApp",
+    "secondary": "Oppure chiamaci"
   }
 }

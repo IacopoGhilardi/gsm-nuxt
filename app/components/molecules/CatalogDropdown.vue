@@ -3,8 +3,8 @@
     <CatalogCard
       v-for="item in catalogs"
       :key="item.id"
+      :partner="partner"
       :catalog="item"
-      :open-label="openLabel"
     />
   </div>
 </template>
@@ -14,7 +14,6 @@ import CatalogCard from '~/components/atoms/CatalogCard.vue'
 
 defineProps<{
   partner: string
-  openLabel: string
-  catalogs: Array<{ cover: string; catalog: string; id: string }>
+  catalogs: Array<{ cover: string; catalog: string; id: string; pages?: number }>
 }>()
 </script>

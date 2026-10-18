@@ -1,10 +1,13 @@
 <template>
-  <a
-    :href="catalog.catalog"
-    target="_blank"
-    rel="noopener"
+  <component
+    :is="browsable ? resolveComponent('NuxtLink') : 'a'"
+    v-bind="
+      browsable
+        ? { to: `/cataloghi/${partner}/${catalog.id}` }
+        : { href: catalog.catalog, target: '_blank', rel: 'noopener' }
+    "
     class="group block focus-visible:outline-none"
-    :aria-label="`${openLabel} — ${label}`"
+    :aria-label="browsable ? `Sfoglia ${label}` : `Apri il PDF di ${label}`"
   >
     <div
       class="relative overflow-hidden border border-ink/10 bg-sand-light transition-all duration-300 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:border-ink group-hover:shadow-[6px_6px_0_0_var(--color-coral)] group-focus-visible:-translate-x-1 group-focus-visible:-translate-y-1 group-focus-visible:border-ink group-focus-visible:shadow-[6px_6px_0_0_var(--color-coral)]"
@@ -22,8 +25,12 @@
         <span
           class="flex w-full items-center justify-between gap-2 px-4 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white"
         >
-          {{ openLabel }}
-          <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+          {{ browsable ? 'Sfoglia' : 'Apri il PDF' }}
+          <i
+            class="text-xs"
+            :class="browsable ? 'fa-solid fa-book-open' : 'fa-solid fa-arrow-up-right-from-square'"
+            aria-hidden="true"
+          ></i>
         </span>
       </div>
     </div>
@@ -33,21 +40,20 @@
     >
       {{ label }}
     </p>
-  </a>
+    <p v-if="browsable" class="mt-0.5 text-sm text-ink/45">{{ catalog.pages }} pagine</p>
+  </component>
 </template>
 
 <script setup lang="ts">
+import { catalogLabel } from '~/utils/catalogPages'
+
 const props = defineProps<{
-  catalog: { cover: string; catalog: string; id: string }
-  openLabel: string
+  partner: string
+  catalog: { cover: string; catalog: string; id: string; pages?: number }
 }>()
 
-// Dall'id "isacco-chef-line-2026" ricaviamo "Chef Line 2026"
-const label = computed(() => {
-  const parts = props.catalog.id.split('-')
-  return parts
-    .slice(1)
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
-    .join(' ')
-})
+const label = computed(() => catalogLabel(props.catalog.id))
+
+// Senza pagine pre-renderizzate il link punta direttamente al PDF, come prima
+const browsable = computed(() => Boolean(props.catalog.pages))
 </script>

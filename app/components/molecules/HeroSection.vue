@@ -52,10 +52,15 @@
 
     <!-- Fascia dati -->
     <div class="relative border-t border-sand/15 bg-navy-900/70 backdrop-blur-sm">
+      <!-- flex invece di colonne fisse: si adatta al numero di voci nei testi -->
       <dl
-        class="mx-auto grid max-w-screen-xl grid-cols-1 divide-y divide-sand/15 px-5 sm:grid-cols-3 sm:divide-x sm:divide-y-0 lg:px-8"
+        class="mx-auto flex max-w-screen-xl flex-col divide-y divide-sand/15 px-5 sm:flex-row sm:divide-x sm:divide-y-0 lg:px-8"
       >
-        <div v-for="fact in hero.facts" :key="fact.label" class="px-0 py-7 sm:px-8 sm:first:pl-0">
+        <div
+          v-for="fact in hero.facts"
+          :key="fact.label"
+          class="flex-1 px-0 py-7 sm:px-8 sm:first:pl-0"
+        >
           <dt class="eyebrow text-sand/55">{{ fact.label }}</dt>
           <dd class="mt-2 font-display text-3xl font-bold uppercase text-white sm:text-4xl">
             {{ fact.value }}

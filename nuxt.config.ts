@@ -1,4 +1,13 @@
 import tailwindcss from '@tailwindcss/vite'
+import catalogs from './app/data/catalogs.json'
+
+// Il sito e' statico: le route dello sfogliatore sono dinamiche e vanno
+// elencate esplicitamente, altrimenti non finiscono nel build.
+const catalogRoutes = catalogs.flatMap((partner) =>
+  partner.catalogs
+    .filter((catalog) => 'pages' in catalog && catalog.pages)
+    .map((catalog) => `/cataloghi/${partner.name}/${catalog.id}`)
+)
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-10-18',
@@ -12,6 +21,20 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()]
+  },
+
+  runtimeConfig: {
+    public: {
+      // Sovrascrivibile al build con NUXT_PUBLIC_CATALOG_PAGES_BASE
+      catalogPagesBase:
+        'https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/sfoglia'
+    }
+  },
+
+  nitro: {
+    prerender: {
+      routes: catalogRoutes
+    }
   },
 
   plugins: ['~/plugins/gsap.ts'],
