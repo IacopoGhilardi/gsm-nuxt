@@ -113,7 +113,7 @@ raggiungibile dal pulsante "PDF" dentro lo sfogliatore.
 3. Carica le pagine sul bucket R2:
 
    ```sh
-   ./scripts/upload-catalogs.sh /tmp/gsm-cataloghi
+   ./scripts/upload-catalogs.sh .cataloghi-build
    ```
 
 4. Fai il build e pubblica: il campo `pages` appena scritto attiva lo

@@ -44,9 +44,7 @@
       <img
         ref="pageImg"
         :key="page"
-        :src="buildPageUrl(pagesBase, catalog.id, page, 1800)"
-        :srcset="buildPageSrcset(pagesBase, catalog.id, page)"
-        :sizes="zoomed ? '1800px' : '(max-width: 640px) 100vw, min(100vw, 1100px)'"
+        :src="buildPageUrl(pagesBase, catalog.id, page, fitWidth)"
         :alt="`${label} — pagina ${page} di ${catalog.pages}`"
         :class="
           zoomed
@@ -167,14 +165,14 @@
 
     <!-- Precarica le pagine adiacenti, cosi' lo sfoglio non attende la rete -->
     <div class="hidden" aria-hidden="true">
-      <img v-for="n in neighbours" :key="n" :src="buildPageUrl(pagesBase, catalog.id, n, 1000)" alt="" />
+      <img v-for="n in neighbours" :key="n" :src="buildPageUrl(pagesBase, catalog.id, n, fitWidth)" alt="" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import catalogList from '~/data/catalogs.json'
-import { buildPageUrl, buildPageSrcset, catalogLabel, usePagesBase } from '~/utils/catalogPages'
+import { buildPageUrl, catalogLabel, usePagesBase } from '~/utils/catalogPages'
 
 const route = useRoute()
 const router = useRouter()
@@ -224,6 +222,27 @@ function toggleZoom() {
 }
 
 const clamp = (n: number) => Math.min(Math.max(n, 1), catalog.pages)
+
+/**
+ * Quale variante servire. Lasciarlo decidere a srcset non funziona: un
+ * telefono DPR 3 con sizes=100vw chiede 1170px e finisce sempre sul file
+ * grande, vanificando la variante mobile. Sul telefono la pagina intera sta
+ * in pochi centimetri, i 1000px bastano; il dettaglio si guarda con lo zoom,
+ * che usa sempre 1800.
+ *
+ * Il default e' "schermo piccolo" perche' l'HTML statico non sa su che
+ * dispositivo finira': cosi' il telefono, che e' quello con la rete lenta,
+ * non scarica mai il file grande, e il desktop si limita a riscaricare una
+ * volta la prima pagina (31 KB) dopo l'idratazione.
+ */
+const smallScreen = ref(true)
+const fitWidth = computed(() => (zoomed.value || !smallScreen.value ? 1800 : 1000))
+
+onMounted(() => {
+  const mq = window.matchMedia('(max-width: 767px)')
+  smallScreen.value = mq.matches
+  mq.addEventListener('change', (e) => (smallScreen.value = e.matches))
+})
 
 // Due pagine avanti e una indietro: copre lo sfoglio in avanti senza sprecare rete
 const neighbours = computed(() =>

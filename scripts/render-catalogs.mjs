@@ -59,9 +59,9 @@ const argValue = (flag) => {
 const only = argValue('--only')
 const keepPdf = argv.includes('--keep-pdf')
 const jobs = Math.max(1, Number(argValue('--jobs')) || os.availableParallelism())
-const outDir = path.resolve(
-  argValue('--out') ?? path.join(os.tmpdir(), 'gsm-cataloghi')
-)
+// Dentro al progetto (ed escluso da git): os.tmpdir() su macOS e' un
+// /var/folders/... impronunciabile, scomodo da passare allo script di upload.
+const outDir = path.resolve(argValue('--out') ?? path.join(ROOT, '.cataloghi-build'))
 
 // ------------------------------------------------------------------ utility
 
@@ -217,7 +217,10 @@ async function renderCatalog(catalog) {
     const started = Date.now()
     let done = 0
     await pool(chunks, jobs, async ([from, to], index) => {
-      done += await renderChunk(pdf, tmpRoot, destDirs, from, to, index)
+      // L'await va risolto PRIMA di toccare il contatore: con "done += await…"
+      // ogni worker legge done prima di sospendersi e si sovrascrivono a vicenda
+      const rendered = await renderChunk(pdf, tmpRoot, destDirs, from, to, index)
+      done += rendered
       const rate = done / ((Date.now() - started) / 1000)
       const left = Math.round((missing.length - done) / Math.max(rate, 0.01))
       process.stdout.write(

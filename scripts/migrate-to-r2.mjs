@@ -33,7 +33,7 @@ const RCLONE_DEST = 'gsm-website:gsm-website'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const CATALOGS_JSON = path.join(ROOT, 'app/data/catalogs.json')
-const WORK = path.join(os.tmpdir(), 'gsm-migrazione-r2')
+const WORK = path.join(ROOT, '.cataloghi-build', '_migrazione')
 
 const dryRun = process.argv.includes('--dry-run')
 const mb = (b) => `${(b / 1048576).toFixed(1)} MB`

@@ -1,11 +1,11 @@
 <template>
-  <component
-    :is="browsable ? resolveComponent('NuxtLink') : 'a'"
-    v-bind="
-      browsable
-        ? { to: `/cataloghi/${partner}/${catalog.id}` }
-        : { href: catalog.catalog, target: '_blank', rel: 'noopener' }
-    "
+  <!-- NuxtLink riconosce da solo gli URL esterni e rende una <a> normale:
+       niente <component :is>, che con resolveComponent in un'espressione del
+       template finiva nell'HTML come tag <NuxtLink> letterale. -->
+  <NuxtLink
+    :to="browsable ? `/cataloghi/${partner}/${catalog.id}` : catalog.catalog"
+    :target="browsable ? undefined : '_blank'"
+    :rel="browsable ? undefined : 'noopener'"
     class="group block focus-visible:outline-none"
     :aria-label="browsable ? `Sfoglia ${label}` : `Apri il PDF di ${label}`"
   >
@@ -41,7 +41,7 @@
       {{ label }}
     </p>
     <p v-if="browsable" class="mt-0.5 text-sm text-ink/45">{{ catalog.pages }} pagine</p>
-  </component>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
