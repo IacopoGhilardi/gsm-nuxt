@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Abbigliamento professionale · Pisa",
+    "title": "Vestiamo chi lavora,\nda oltre vent'anni",
+    "subtitle": "Divise, camici, abbigliamento tecnico e gadget personalizzati. Ti portiamo i campioni direttamente in azienda: provi, scegli, noi pensiamo al resto.",
+    "catalogButton": "Sfoglia i cataloghi",
+    "aboutButton": "Chi siamo",
+    "facts": [
+      { "value": "20+", "label": "Anni di esperienza" },
+      { "value": "4", "label": "Brand rappresentati" },
+      { "value": "A domicilio", "label": "Campioni da provare" }
+    ]
+  },
+  "partners": {
+    "eyebrow": "I marchi che rappresentiamo",
+    "title": "Partner selezionati"
+  },
+  "servizi": {
+    "eyebrow": "Cosa offriamo",
+    "title": "Un servizio su misura, non un carrello online",
+    "subtitle": "Portiamo i campioni da provare direttamente a te, disponibili subito o ordinabili in pochi giorni. La differenza tra comprare online e farsi consigliare da chi conosce il mestiere."
+  },
+  "about": {
+    "eyebrow": "Chi siamo",
+    "title": "Il mestiere prima del catalogo",
+    "paragraphs": [
+      "Con oltre vent'anni di esperienza nel settore dell'abbigliamento da lavoro, offriamo soluzioni personalizzate e di alta qualità, garantendo un servizio professionale e affidabile.",
+      "Lavoriamo con ristoranti, hotel, officine, studi medici, parrucchieri e aziende di ogni dimensione su Pisa e provincia. Ti seguiamo dalla scelta del capo alla personalizzazione con stampa o ricamo."
+    ],
+    "ctaLabel": "Parliamone"
+  },
+  "cta": {
+    "title": "Serve una divisa per la tua squadra?",
+    "subtitle": "Raccontaci di cosa hai bisogno: ti richiamiamo e fissiamo un appuntamento con i campioni.",
+    "primary": "Chiamaci ora",
+    "secondary": "Scrivi su WhatsApp"
+  }
+}

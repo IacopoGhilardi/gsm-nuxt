@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: gsm --default;
+}
+
+@plugin "daisyui/theme" {
+  name: "gsm";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #ffffff;
+  --color-base-200: #f4f1ef;
+  --color-base-300: #eae3e0;
+  --color-base-content: #1a2733;
+
+  --color-primary: #2e4052;
+  --color-primary-content: #ffffff;
+  --color-secondary: #2d3748;
+  --color-secondary-content: #ffffff;
+  --color-accent: #ee6352;
+  --color-accent-content: #ffffff;
+  --color-neutral: #1a2733;
+  --color-neutral-content: #eae3e0;
+
+  --color-info: #2e4052;
+  --color-info-content: #ffffff;
+  --color-success: #2f6b4f;
+  --color-success-content: #ffffff;
+  --color-warning: #c98a24;
+  --color-warning-content: #ffffff;
+  --color-error: #c0392b;
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.28rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Barlow Condensed", "Inter", ui-sans-serif, sans-serif;
+
+  --color-ink: #1a2733;
+  --color-navy: #2e4052;
+  --color-navy-700: #263646;
+  --color-navy-900: #16222e;
+  --color-sand: #eae3e0;
+  --color-sand-light: #f4f1ef;
+  --color-coral: #ee6352;
+  --color-coral-dark: #d94e3d;
+
+  /* Alias retrocompatibili con la palette precedente */
+  --color-primary-light: #eae3e0;
+
+  --shadow-hard: 6px 6px 0 0 var(--color-ink);
+  --shadow-hard-coral: 6px 6px 0 0 var(--color-coral);
+  --shadow-lift: 0 18px 40px -18px rgb(26 39 51 / 0.45);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-sand-light);
+    color: var(--color-ink);
+    font-feature-settings: "cv05", "ss01";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: var(--color-coral);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-coral);
+    outline-offset: 3px;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+}
+
+@utility rule-coral {
+  position: relative;
+}
+@utility rule-coral {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.75rem;
+    width: 3.5rem;
+    height: 3px;
+    background-color: var(--color-coral);
+  }
+}
+
+/* Griglia tecnica di sfondo, richiamo "da lavoro" */
+@utility grid-paper {
+  background-image:
+    linear-gradient(to right, rgb(234 227 224 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(234 227 224 / 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Marquee loghi partner */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-viewport:hover .marquee-track {
+  animation-play-state: paused;
+}
