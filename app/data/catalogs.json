@@ -1,7 +1,6 @@
 [
   {
     "name": "isacco",
-    "baseUrl": "https://gsm-abbigliamento.s3.amazonaws.com/",
     "image": "logo-isacco.png",
     "catalogs": [
       {
@@ -28,109 +27,107 @@
   },
   {
     "name": "endi",
-    "baseUrl": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/",
     "image": "logo-endi.gif",
     "catalogs": [
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Estetica-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/cat+estetica+2008+web.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ENDI-Estetica-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/cat+estetica+2008+web.pdf",
         "id": "endi-estetica-2008"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Ristorazione-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/cat+ristorazione+03-08.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ENDI-Ristorazione-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/cat+ristorazione+03-08.pdf",
         "id": "endi-ristorazione-2008"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/cat_endi2018-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/catalogo_ENDI.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/cat_endi2018-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/catalogo_ENDI.pdf",
         "id": "endi-catalogo-2018"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/copertina-horeca-2022-240x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/CatalogoENDI-2022.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/copertina-horeca-2022-240x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/CatalogoENDI-2022.pdf",
         "id": "endi-horeca-2022"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Schermata-2020-02-14-alle-08.31.52-240x300.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/catalogoENDI2020-web.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Schermata-2020-02-14-alle-08.31.52-240x300.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/catalogoENDI2020-web.pdf",
         "id": "endi-catalogo-2020"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Cop-Medical_ENDI-2021-240x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/def_Cat-Medical_ENDI-2021.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Cop-Medical_ENDI-2021-240x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/def_Cat-Medical_ENDI-2021.pdf",
         "id": "endi-medical-2021"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-New-Collection-2013-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/endi_firma_white.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ENDI-New-Collection-2013-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/endi_firma_white.pdf",
         "id": "endi-new-collection-2013"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Endi-Beauty-Medical-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/Endi-Beauty-Medical.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Endi-Beauty-Medical-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/Endi-Beauty-Medical.pdf",
         "id": "endi-beauty-medical"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Cop-beauty_ENDI-2021-240x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/def_CatalogoENDI-estetica-2021.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Cop-beauty_ENDI-2021-240x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/def_CatalogoENDI-estetica-2021.pdf",
         "id": "endi-estetica-2021"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Endi-Bistrot-Food-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/Endi-Bistrot-Food.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Endi-Bistrot-Food-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/Endi-Bistrot-Food.pdf",
         "id": "endi-bistrot-food"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Only-size-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/ENDI-Only-size.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ENDI-Only-size-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/ENDI-Only-size.pdf",
         "id": "endi-only-size"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ESTETICO_baggio-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/ESTETICO_baggio.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ESTETICO_baggio-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/ESTETICO_baggio.pdf",
         "id": "endi-estetico-baggio"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/MEDICALE_baggio-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/MEDICALE_baggio.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/MEDICALE_baggio-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/MEDICALE_baggio.pdf",
         "id": "endi-medicale-baggio"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Collection-Glamour-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/menabo_catalogo_DEFINITIVO.indd.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ENDI-Collection-Glamour-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/menabo_catalogo_DEFINITIVO.indd.pdf",
         "id": "endi-collection-glamour"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ristorazione_baggio-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/ristorazione_baggio.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ristorazione_baggio-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/ristorazione_baggio.pdf",
         "id": "endi-ristorazione-baggio"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ristorazione-new-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/ristorazione-new.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ristorazione-new-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/ristorazione-new.pdf",
         "id": "endi-ristorazione-new"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/ENDI-Mix-200x300.jpg",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/untitled.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/ENDI-Mix-200x300.jpg",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/untitled.pdf",
         "id": "endi-mix"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Horeca_2.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/CatalogoENDI-HORECA-2024.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Horeca_2.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/CatalogoENDI-HORECA-2024.pdf",
         "id": "endi-horeca-2"
       },
       {
-        "cover": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/copertine/Beauty_2.png",
-        "catalog": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/CatalogoENDI-Beauty-2024_low2.pdf",
+        "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/copertine/Beauty_2.png",
+        "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/endi/CatalogoENDI-Beauty-2024_low2.pdf",
         "id": "endi-beauty-2"
       }
     ]
   },
   {
     "name": "makito",
-    "baseUrl": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/",
     "image": "makito-logo.png",
     "catalogs": [
       {
@@ -142,7 +139,6 @@
   },
   {
     "name": "jrc",
-    "baseUrl": "https://gsm-website.s3.eu-north-1.amazonaws.com/cataloghi/endi/",
     "image": "logo-jrc.jpg",
     "catalogs": [
       {
