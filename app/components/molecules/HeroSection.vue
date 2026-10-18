@@ -35,10 +35,7 @@
             class="group inline-flex items-center justify-center gap-3 bg-coral px-7 py-4 font-display text-lg font-semibold uppercase tracking-wider text-white transition-colors hover:bg-coral-dark"
           >
             {{ hero.catalogButton }}
-            <i
-              class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"
-              aria-hidden="true"
-            ></i>
+            <AppIcon name="arrow-right" class="text-sm transition-transform group-hover:translate-x-1" />
           </NuxtLink>
           <a
             href="#chi-siamo"

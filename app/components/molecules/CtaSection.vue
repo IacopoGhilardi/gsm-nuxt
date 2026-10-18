@@ -19,14 +19,14 @@
           rel="noopener"
           class="inline-flex items-center justify-center gap-3 bg-coral px-7 py-4 font-display text-lg font-semibold uppercase tracking-wider text-white transition-colors hover:bg-coral-dark"
         >
-          <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+          <AppIcon name="whatsapp" class="text-lg" />
           {{ cta.primary }}
         </a>
         <a
           :href="`tel:${contacts.phone.value}`"
           class="inline-flex items-center justify-center gap-3 border border-sand/35 px-7 py-4 font-display text-lg font-semibold uppercase tracking-wider text-white transition-colors hover:border-sand hover:bg-white/10"
         >
-          <i class="fa-solid fa-phone text-sm" aria-hidden="true"></i>
+          <AppIcon name="phone" class="text-sm" />
           {{ cta.secondary }}
         </a>
       </div>

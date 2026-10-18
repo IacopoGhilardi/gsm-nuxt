@@ -14,7 +14,6 @@
     "cataloghi:progress": "node scripts/render-progress.mjs --watch"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.3.1",
     "@nuxtjs/sitemap": "^9.1.0",
     "gsap": "^3.15.0",
     "nuxt": "^4.6.2",
@@ -22,7 +21,6 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
-    "daisyui": "^5.7.50",
     "tailwindcss": "^4.3.3"
   }
 }

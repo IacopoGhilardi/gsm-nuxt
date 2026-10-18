@@ -26,11 +26,7 @@
           class="flex w-full items-center justify-between gap-2 px-4 py-4 font-display text-sm font-semibold uppercase tracking-wider text-white"
         >
           {{ browsable ? 'Sfoglia' : 'Apri il PDF' }}
-          <i
-            class="text-xs"
-            :class="browsable ? 'fa-solid fa-book-open' : 'fa-solid fa-arrow-up-right-from-square'"
-            aria-hidden="true"
-          ></i>
+          <AppIcon :name="browsable ? 'fa-solid fa-book-open' : 'fa-solid fa-arrow-up-right-from-square'" class="text-xs" />
         </span>
       </div>
     </div>

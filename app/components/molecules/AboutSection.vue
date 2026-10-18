@@ -33,10 +33,7 @@
           class="group mt-9 inline-flex items-center gap-3 border-b-2 border-coral pb-1 font-display text-lg font-semibold uppercase tracking-wider text-navy transition-colors hover:text-coral"
         >
           {{ about.ctaLabel }}
-          <i
-            class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"
-            aria-hidden="true"
-          ></i>
+          <AppIcon name="arrow-right" class="text-sm transition-transform group-hover:translate-x-1" />
         </NuxtLink>
       </div>
     </div>

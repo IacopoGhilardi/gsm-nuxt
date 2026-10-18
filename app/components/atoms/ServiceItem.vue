@@ -7,7 +7,7 @@
         class="flex h-14 w-14 items-center justify-center bg-coral text-2xl text-white"
         aria-hidden="true"
       >
-        <i :class="service.icon"></i>
+        <AppIcon :name="service.icon" />
       </span>
       <span
         class="font-display text-5xl font-bold leading-none text-sand/15 transition-colors group-hover:text-sand/30"

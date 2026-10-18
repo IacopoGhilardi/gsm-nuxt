@@ -27,7 +27,7 @@
           rel="noopener"
           class="ml-auto hidden items-center gap-2 bg-coral px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-coral-dark lg:ml-6 lg:flex"
         >
-          <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
+          <AppIcon name="whatsapp" class="text-base" />
           <span>{{ formattedPhone }}</span>
         </a>
 
@@ -40,7 +40,7 @@
           aria-label="Apri il menu"
           @click="open = true"
         >
-          <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+          <AppIcon name="bars" class="text-lg" />
         </button>
       </div>
     </div>
@@ -67,7 +67,7 @@
             aria-label="Chiudi il menu"
             @click="open = false"
           >
-            <i class="fa-solid fa-xmark text-xl" aria-hidden="true"></i>
+            <AppIcon name="xmark" class="text-xl" />
           </button>
         </div>
 
@@ -84,7 +84,7 @@
             "
             @click="open = false"
           >
-            <i :class="item.icon" class="w-5 text-center text-base" aria-hidden="true"></i>
+            <span class="flex w-5 shrink-0 justify-center"><AppIcon :name="item.icon" class="text-base" /></span>
             {{ item.label }}
           </NuxtLink>
         </nav>
@@ -96,7 +96,7 @@
             rel="noopener"
             class="flex w-full items-center justify-center gap-2 bg-coral px-4 py-3 text-sm font-semibold text-white"
           >
-            <i class="fa-brands fa-whatsapp text-base" aria-hidden="true"></i>
+            <AppIcon name="whatsapp" class="text-base" />
             Scrivici su WhatsApp
           </a>
         </div>

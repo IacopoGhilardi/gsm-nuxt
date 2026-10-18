@@ -40,7 +40,7 @@
               :class="isOpen(index) ? 'rotate-180 border-coral bg-coral text-white' : ''"
               aria-hidden="true"
             >
-              <i class="fa-solid fa-chevron-down text-sm"></i>
+              <AppIcon name="chevron-down" class="text-sm" />
             </span>
           </button>
         </h2>
@@ -68,7 +68,7 @@
           class="inline-flex shrink-0 items-center justify-center gap-3 bg-navy px-7 py-4 font-display text-lg font-semibold uppercase tracking-wider text-white transition-colors hover:bg-coral"
         >
           {{ texts.helpCta }}
-          <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+          <AppIcon name="arrow-right" class="text-sm" />
         </NuxtLink>
       </aside>
     </div>
@@ -106,6 +106,8 @@ const toggle = (index: number) => {
     ? openPanels.value.filter((i) => i !== index)
     : [...openPanels.value, index]
 }
+
+useBreadcrumbs([{ name: texts.mainTitle, path: '/cataloghi' }])
 
 useSeoMeta({
   title: 'Cataloghi',

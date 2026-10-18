@@ -16,7 +16,7 @@
           <span
             class="flex h-14 w-14 items-center justify-center bg-navy text-xl text-white transition-colors group-hover:bg-coral"
           >
-            <i :class="channel.icon" aria-hidden="true"></i>
+            <AppIcon :name="channel.icon" />
           </span>
 
           <span class="eyebrow mt-7 text-ink/45">{{ channel.title }}</span>
@@ -34,20 +34,20 @@
             class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-coral transition-transform group-hover:translate-x-1"
           >
             {{ channel.label }}
-            <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+            <AppIcon name="arrow-right" class="text-xs" />
           </span>
         </a>
       </div>
 
       <!-- Info -->
-      <div class="mt-5 grid gap-5 md:grid-cols-2">
+      <div class="mt-5 grid gap-5 md:grid-cols-1">
         <div
           v-for="info in infos"
           :key="info.title"
           class="flex items-center gap-5 border border-ink/10 bg-sand-light p-8"
         >
           <span class="flex h-12 w-12 shrink-0 items-center justify-center bg-coral/10 text-lg text-coral">
-            <i :class="info.icon" aria-hidden="true"></i>
+            <AppIcon :name="info.icon" />
           </span>
           <div>
             <p class="eyebrow text-ink/45">{{ info.title }}</p>
@@ -103,7 +103,9 @@ const channels = [
   }
 ]
 
-const infos = [texts.area, texts.hours]
+const infos = [texts.area]
+
+useBreadcrumbs([{ name: 'Contatti', path: '/contatti' }])
 
 useSeoMeta({
   title: 'Contatti',

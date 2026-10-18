@@ -47,8 +47,16 @@ useHead({
         telephone: '+393473568443',
         email: 'gsmabbigliamentodalavoro@gmail.com',
         description: 'Specializzati in abbigliamento da lavoro a Pisa.',
-        areaServed: 'Pisa e provincia',
-        url: 'https://www.gsm-adl.it'
+        areaServed: { '@type': 'AdministrativeArea', name: 'Pisa e provincia' },
+        url: 'https://www.gsm-adl.it',
+        image: 'https://www.gsm-adl.it/og-image.jpg',
+        vatID: 'IT02370530509',
+        knowsAbout: [
+          'abbigliamento da lavoro',
+          'divise professionali',
+          'stampe e ricami su tessuto',
+          'gadget promozionali personalizzati'
+        ]
       })
     }
   ]

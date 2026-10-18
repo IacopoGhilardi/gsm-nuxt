@@ -21,7 +21,7 @@
                 :to="item.route"
                 class="inline-flex items-center gap-3 text-sm text-sand/80 transition-colors hover:text-white"
               >
-                <i :class="item.icon" class="w-4 text-center text-xs text-coral" aria-hidden="true"></i>
+                <span class="flex w-4 shrink-0 justify-center text-coral"><AppIcon :name="item.icon" class="text-sm" /></span>
                 {{ item.label }}
               </NuxtLink>
             </li>
@@ -36,7 +36,7 @@
                 :href="`tel:${contacts.phone.value}`"
                 class="inline-flex items-center gap-3 text-sand/80 transition-colors hover:text-white"
               >
-                <i class="fa-solid fa-phone w-4 text-center text-xs text-coral" aria-hidden="true"></i>
+                <span class="flex w-4 shrink-0 justify-center text-coral"><AppIcon name="phone" class="text-sm" /></span>
                 {{ formattedPhone }}
               </a>
             </li>
@@ -47,7 +47,7 @@
                 rel="noopener"
                 class="inline-flex items-center gap-3 text-sand/80 transition-colors hover:text-white"
               >
-                <i class="fa-brands fa-whatsapp w-4 text-center text-sm text-coral" aria-hidden="true"></i>
+                <span class="flex w-4 shrink-0 justify-center text-coral"><AppIcon name="whatsapp" class="text-sm" /></span>
                 WhatsApp
               </a>
             </li>
@@ -56,12 +56,12 @@
                 :href="`mailto:${contacts.email.value}`"
                 class="inline-flex items-start gap-3 break-all text-sand/80 transition-colors hover:text-white"
               >
-                <i class="fa-solid fa-envelope mt-1 w-4 text-center text-xs text-coral" aria-hidden="true"></i>
+                <span class="flex w-4 shrink-0 justify-center text-coral"><AppIcon name="envelope" class="text-sm" /></span>
                 {{ contacts.email.value }}
               </a>
             </li>
             <li class="inline-flex items-center gap-3 text-sand/80">
-              <i class="fa-solid fa-location-dot w-4 text-center text-xs text-coral" aria-hidden="true"></i>
+              <span class="flex w-4 shrink-0 justify-center text-coral"><AppIcon name="location-dot" class="text-sm" /></span>
               Pisa e provincia
             </li>
           </ul>

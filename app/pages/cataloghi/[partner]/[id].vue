@@ -7,7 +7,7 @@
           to="/cataloghi"
           class="flex h-10 shrink-0 items-center gap-2 px-2 text-sand/70 transition-colors hover:text-white"
         >
-          <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
+          <AppIcon name="arrow-left" class="text-sm" />
           <span class="hidden font-display text-base font-semibold uppercase tracking-wider sm:inline">
             Cataloghi
           </span>
@@ -26,7 +26,7 @@
           class="flex h-10 shrink-0 items-center gap-2 px-2 text-sand/70 transition-colors hover:text-white"
           title="Scarica il PDF originale ad alta risoluzione"
         >
-          <i class="fa-solid fa-download text-sm" aria-hidden="true"></i>
+          <AppIcon name="download" class="text-sm" />
           <span class="hidden font-display text-base font-semibold uppercase tracking-wider sm:inline">
             PDF
           </span>
@@ -75,7 +75,7 @@
           rel="noopener"
           class="mt-5 inline-flex items-center gap-2 bg-coral px-5 py-3 font-display text-base font-semibold uppercase tracking-wider text-white"
         >
-          <i class="fa-solid fa-download text-sm" aria-hidden="true"></i>
+          <AppIcon name="download" class="text-sm" />
           Apri il PDF
         </a>
       </div>
@@ -88,7 +88,7 @@
         aria-label="Pagina precedente"
         @click="go(page - 1)"
       >
-        <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        <AppIcon name="chevron-left" />
       </button>
       <button
         v-if="page < catalog.pages"
@@ -97,7 +97,7 @@
         aria-label="Pagina successiva"
         @click="go(page + 1)"
       >
-        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        <AppIcon name="chevron-right" />
       </button>
     </div>
 
@@ -114,7 +114,7 @@
           aria-label="Pagina precedente"
           @click="go(page - 1)"
         >
-          <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
+          <AppIcon name="chevron-left" class="text-sm" />
         </button>
 
         <form
@@ -143,7 +143,7 @@
           aria-label="Pagina successiva"
           @click="go(page + 1)"
         >
-          <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
+          <AppIcon name="chevron-right" class="text-sm" />
         </button>
 
         <button
@@ -154,11 +154,7 @@
           :aria-label="zoomed ? 'Riduci la pagina' : 'Ingrandisci la pagina'"
           @click="toggleZoom"
         >
-          <i
-            class="text-sm"
-            :class="zoomed ? 'fa-solid fa-magnifying-glass-minus' : 'fa-solid fa-magnifying-glass-plus'"
-            aria-hidden="true"
-          ></i>
+          <AppIcon :name="zoomed ? 'fa-solid fa-magnifying-glass-minus' : 'fa-solid fa-magnifying-glass-plus'" class="text-sm" />
         </button>
       </div>
     </nav>
@@ -305,6 +301,11 @@ watch(
 
 onMounted(() => window.addEventListener('keydown', onKey))
 onUnmounted(() => window.removeEventListener('keydown', onKey))
+
+useBreadcrumbs([
+  { name: 'I nostri cataloghi', path: '/cataloghi' },
+  { name: label, path: `/cataloghi/${partnerName}/${catalogId}` }
+])
 
 useSeoMeta({
   title: `${label} — Catalogo`,

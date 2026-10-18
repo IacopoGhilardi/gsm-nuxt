@@ -14,10 +14,7 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/sitemap'],
 
-  css: [
-    '@fortawesome/fontawesome-free/css/all.css',
-    '~/assets/css/main.css'
-  ],
+  css: ['~/assets/css/main.css'],
 
   vite: {
     plugins: [tailwindcss()]
@@ -39,7 +36,8 @@ export default defineNuxtConfig({
 
   plugins: ['~/plugins/gsap.ts'],
 
-  components: true,
+  // pathPrefix: false -> <AppIcon> invece di <AtomsAppIcon>
+  components: [{ path: '~/components', pathPrefix: false }],
 
   site: {
     url: 'https://www.gsm-adl.it',
@@ -51,7 +49,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'it' },
-      titleTemplate: '%s - Abbigliamento da Lavoro',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
