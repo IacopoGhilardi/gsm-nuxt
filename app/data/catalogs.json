@@ -6,17 +6,20 @@
       {
         "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/chef_line.png",
         "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/CHEFLINE_2026.pdf",
-        "id": "isacco-chef-line-2026"
+        "id": "isacco-chef-line-2026",
+        "pages": 348
       },
       {
         "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/hair_stylist.png",
         "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/HAIRSTYLIST_2026.pdf",
-        "id": "isacco-hair-stylist-2026"
+        "id": "isacco-hair-stylist-2026",
+        "pages": 140
       },
       {
         "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/Horeca.png",
         "catalog": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/HORECA_2026.pdf",
-        "id": "isacco-horeca-2026"
+        "id": "isacco-horeca-2026",
+        "pages": 452
       },
       {
         "cover": "https://pub-b0f8272c710649f68ef7029d37933dc5.r2.dev/cataloghi/isacco/copertine/Medicale.png",

@@ -2,10 +2,9 @@
   "eyebrow": "Collezioni aggiornate",
   "mainTitle": "I nostri cataloghi",
   "subtitle": "Tutte le collezioni dei marchi che rappresentiamo. Scegli il brand, apri il catalogo in PDF e segnati i codici: al resto pensiamo noi.",
-  "openLabel": "Apri il catalogo PDF",
   "catalogSingular": "catalogo",
   "catalogPlural": "cataloghi",
   "helpTitle": "Non trovi quello che cerchi?",
-  "helpText": "I cataloghi coprono solo una parte dell'assortimento. Chiamaci e ti diciamo subito se possiamo procurartelo.",
+  "helpText": "",
   "helpCta": "Contattaci"
 }

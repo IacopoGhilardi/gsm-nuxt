@@ -1,0 +1,27 @@
+# Netlify costruisce il sito sui suoi server a ogni push: esegue il comando
+# qui sotto e pubblica la cartella indicata.
+#
+# Il rendering dei cataloghi NON fa parte del build: le pagine WebP vivono
+# su R2 e ci arrivano da scripts/render-catalogs.mjs lanciato in locale.
+# Qui si legge solo il campo "pages" di app/data/catalogs.json, che decide
+# quali sfogliatori esistono e quali route prerenderizzare.
+
+[build]
+  command = "npm run generate"
+  publish = ".output/public"
+
+[build.environment]
+  # Nuxt 4 richiede ^22.22.3 || ^24.15.0 || >=26.0.0: meglio fissarla che
+  # dipendere dal default di Netlify, che cambia nel tempo.
+  NODE_VERSION = "22.22.3"
+
+# Gli asset di Nuxt hanno l'hash nel nome, quindi si possono tenere per sempre.
+[[headers]]
+  for = "/_nuxt/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
