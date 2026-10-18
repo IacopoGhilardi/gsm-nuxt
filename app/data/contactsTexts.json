@@ -1,0 +1,32 @@
+{
+  "phone": {
+    "icon": "fa-solid fa-phone",
+    "title": "Telefono",
+    "value": "+393473568443",
+    "label": "Chiamaci ora"
+  },
+  "email": {
+    "icon": "fa-solid fa-envelope",
+    "title": "Email",
+    "value": "gsmabbigliamentodalavoro@gmail.com",
+    "label": "Mandaci una mail"
+  },
+  "eyebrow": "Pisa e provincia",
+  "mainTitle": "Parliamo del tuo lavoro",
+  "subtitle": "Chiamaci, scrivici su WhatsApp o manda una mail: fissiamo un appuntamento e ti portiamo i campioni da provare, senza impegno.",
+  "whatsapp": {
+    "icon": "fa-brands fa-whatsapp",
+    "title": "WhatsApp",
+    "label": "Scrivici un messaggio"
+  },
+  "area": {
+    "icon": "fa-solid fa-location-dot",
+    "title": "Zona servita",
+    "value": "Pisa e provincia"
+  },
+  "hours": {
+    "icon": "fa-solid fa-clock",
+    "title": "Quando ci trovi",
+    "value": "Lun – Ven, 9:00 – 18:00"
+  }
+}
